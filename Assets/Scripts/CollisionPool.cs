@@ -119,7 +119,7 @@ public sealed class CollisionPool {
     /// </summary>
     /// <param name="category">コリジョン種別</param>
     /// <param name="hitHandler">接触コールバック</param>
-    public Collision PickOut(COL_CATEGORY category, HitHandler hitHandler = null) {
+    public Collision PickOut(COL_CATEGORY category, HitHandler hitHandler) {
         if (this.pool.count < 1) {
             Debug.Assert(false, "コリジョン不足");
             return null;
